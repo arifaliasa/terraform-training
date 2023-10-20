@@ -1,0 +1,413 @@
+{
+  "version": 4,
+  "terraform_version": "1.6.1",
+  "serial": 15,
+  "lineage": "65f4951a-5416-ebf0-b17a-f8318ac9a922",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_app_service_plan",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "app_service_environment_id": "",
+            "id": "/subscriptions/2146ae1f-7d1d-4dbf-828b-54f9ca42f169/resourceGroups/WebApp3133_group/providers/Microsoft.Web/serverfarms/ASP-WebApp3133group-b79e",
+            "is_xenon": true,
+            "kind": "windows",
+            "location": "eastus",
+            "maximum_elastic_worker_count": 1,
+            "maximum_number_of_workers": 30,
+            "name": "ASP-WebApp3133group-b79e",
+            "per_site_scaling": false,
+            "reserved": false,
+            "resource_group_name": "WebApp3133_group",
+            "sku": [
+              {
+                "capacity": 1,
+                "size": "P1mv3",
+                "tier": "PremiumMV3"
+              }
+            ],
+            "tags": {},
+            "timeouts": null,
+            "zone_redundant": false
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIwIn0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_linux_virtual_machine",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "additional_capabilities": [],
+            "admin_password": "P@ssw0rd1234",
+            "admin_ssh_key": [],
+            "admin_username": "adminroot",
+            "allow_extension_operations": true,
+            "availability_set_id": "",
+            "boot_diagnostics": [
+              {
+                "storage_account_uri": ""
+              }
+            ],
+            "bypass_platform_safety_checks_on_user_schedule_enabled": false,
+            "capacity_reservation_group_id": "",
+            "computer_name": "kalitestvm01",
+            "custom_data": null,
+            "dedicated_host_group_id": "",
+            "dedicated_host_id": "",
+            "disable_password_authentication": false,
+            "edge_zone": "",
+            "encryption_at_host_enabled": false,
+            "eviction_policy": "",
+            "extensions_time_budget": "PT1H30M",
+            "gallery_application": [],
+            "id": "/subscriptions/2146ae1f-7d1d-4dbf-828b-54f9ca42f169/resourceGroups/WebApp3133_group/providers/Microsoft.Compute/virtualMachines/kalitestvm01",
+            "identity": [],
+            "license_type": "",
+            "location": "eastus",
+            "max_bid_price": -1,
+            "name": "kalitestvm01",
+            "network_interface_ids": [
+              "/subscriptions/2146ae1f-7d1d-4dbf-828b-54f9ca42f169/resourceGroups/WebApp3133_group/providers/Microsoft.Network/networkInterfaces/kalitestvm01128_z1"
+            ],
+            "os_disk": [
+              {
+                "caching": "ReadWrite",
+                "diff_disk_settings": [],
+                "disk_encryption_set_id": "",
+                "disk_size_gb": 40,
+                "name": "kalitestvm01_OsDisk_1_9fc856b718cf4151bef0c7227d9eab85",
+                "secure_vm_disk_encryption_set_id": "",
+                "security_encryption_type": "",
+                "storage_account_type": "Premium_LRS",
+                "write_accelerator_enabled": false
+              }
+            ],
+            "patch_assessment_mode": "ImageDefault",
+            "patch_mode": "ImageDefault",
+            "plan": [
+              {
+                "name": "kali-2023-3",
+                "product": "kali",
+                "publisher": "kali-linux"
+              }
+            ],
+            "platform_fault_domain": -1,
+            "priority": "Regular",
+            "private_ip_address": "10.0.0.4",
+            "private_ip_addresses": [
+              "10.0.0.4"
+            ],
+            "provision_vm_agent": true,
+            "proximity_placement_group_id": "",
+            "public_ip_address": "172.174.124.184",
+            "public_ip_addresses": [
+              "172.174.124.184"
+            ],
+            "reboot_setting": "",
+            "resource_group_name": "WebApp3133_group",
+            "secret": [],
+            "secure_boot_enabled": false,
+            "size": "Standard_DS1_v2",
+            "source_image_id": "",
+            "source_image_reference": [
+              {
+                "offer": "kali",
+                "publisher": "kali-linux",
+                "sku": "kali-2023-3",
+                "version": "latest"
+              }
+            ],
+            "tags": {},
+            "termination_notification": [],
+            "timeouts": null,
+            "user_data": "",
+            "virtual_machine_id": "3a2c63f1-43fa-4762-9b8b-3c6efe606c41",
+            "virtual_machine_scale_set_id": "",
+            "vtpm_enabled": false,
+            "zone": "3"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNzAwMDAwMDAwMDAwLCJkZWxldGUiOjI3MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoyNzAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_managed_disk",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "create_option": "Empty",
+            "disk_access_id": "",
+            "disk_encryption_set_id": "",
+            "disk_iops_read_only": 0,
+            "disk_iops_read_write": 120,
+            "disk_mbps_read_only": 0,
+            "disk_mbps_read_write": 25,
+            "disk_size_gb": 4,
+            "edge_zone": "",
+            "encryption_settings": [],
+            "gallery_image_reference_id": "",
+            "hyper_v_generation": "",
+            "id": "/subscriptions/2146ae1f-7d1d-4dbf-828b-54f9ca42f169/resourceGroups/WebApp3133_group/providers/Microsoft.Compute/disks/datadisk1",
+            "image_reference_id": "",
+            "location": "eastus",
+            "logical_sector_size": null,
+            "max_shares": 0,
+            "name": "datadisk1",
+            "network_access_policy": null,
+            "on_demand_bursting_enabled": false,
+            "optimized_frequent_attach_enabled": false,
+            "os_type": "",
+            "performance_plus_enabled": false,
+            "public_network_access_enabled": true,
+            "resource_group_name": "WebApp3133_group",
+            "secure_vm_disk_encryption_set_id": "",
+            "security_type": "",
+            "source_resource_id": "",
+            "source_uri": "",
+            "storage_account_id": "",
+            "storage_account_type": "Premium_LRS",
+            "tags": {},
+            "tier": "P10",
+            "timeouts": null,
+            "trusted_launch_enabled": false,
+            "upload_size_bytes": 0,
+            "zone": "3"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIxIn0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/2146ae1f-7d1d-4dbf-828b-54f9ca42f169/resourceGroups/kibb02-rg",
+            "location": "westeurope",
+            "managed_by": "",
+            "name": "kibb02-rg",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIwIn0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_windows_web_app",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "app_settings": {
+              "WEBSITES_ENABLE_APP_SERVICE_STORAGE": "false"
+            },
+            "auth_settings": [],
+            "auth_settings_v2": [],
+            "backup": [],
+            "client_affinity_enabled": false,
+            "client_certificate_enabled": false,
+            "client_certificate_exclusion_paths": "",
+            "client_certificate_mode": "Required",
+            "connection_string": [],
+            "custom_domain_verification_id": "9633B3768A2770681F1DF924F9C4DB41CB6422CD13AA4B26A24A5B4F2534DD97",
+            "default_hostname": "webapp3133.azurewebsites.net",
+            "enabled": true,
+            "hosting_environment_id": "",
+            "https_only": true,
+            "id": "/subscriptions/2146ae1f-7d1d-4dbf-828b-54f9ca42f169/resourceGroups/WebApp3133_group/providers/Microsoft.Web/sites/WebApp3133",
+            "identity": [],
+            "key_vault_reference_identity_id": "SystemAssigned",
+            "kind": "app,container,windows",
+            "location": "eastus",
+            "logs": [],
+            "name": "WebApp3133",
+            "outbound_ip_address_list": [
+              "52.191.238.216",
+              "52.191.238.236",
+              "52.191.239.10",
+              "52.191.239.14",
+              "52.191.239.26",
+              "52.191.239.39",
+              "20.119.16.49"
+            ],
+            "outbound_ip_addresses": "52.191.238.216,52.191.238.236,52.191.239.10,52.191.239.14,52.191.239.26,52.191.239.39,20.119.16.49",
+            "possible_outbound_ip_address_list": [
+              "52.190.30.194",
+              "52.190.31.198",
+              "52.191.233.181",
+              "52.191.234.251",
+              "52.191.235.86",
+              "52.191.235.161",
+              "52.191.238.81",
+              "52.191.238.140",
+              "52.190.29.195",
+              "52.191.238.148",
+              "52.191.238.176",
+              "52.191.238.208",
+              "52.191.238.216",
+              "52.191.238.236",
+              "52.191.239.10",
+              "52.191.239.14",
+              "52.191.239.26",
+              "52.191.239.39",
+              "52.191.235.211",
+              "52.191.235.212",
+              "52.191.235.214",
+              "52.191.235.219",
+              "52.191.235.225",
+              "52.191.235.243",
+              "52.191.236.45",
+              "52.191.237.60",
+              "52.191.237.95",
+              "52.191.233.52",
+              "52.191.237.97",
+              "52.191.237.121",
+              "52.191.237.247",
+              "52.191.238.19",
+              "52.191.238.55",
+              "52.191.238.57",
+              "52.191.238.68",
+              "52.191.238.75",
+              "52.191.238.81",
+              "52.191.238.140",
+              "52.190.29.195",
+              "52.191.238.148",
+              "52.191.238.176",
+              "52.191.238.208",
+              "52.191.238.216",
+              "52.191.238.236",
+              "52.191.239.10",
+              "52.191.239.14",
+              "52.191.239.26",
+              "52.191.239.39",
+              "52.191.239.48",
+              "52.191.239.65",
+              "52.191.239.83",
+              "52.191.239.87",
+              "52.191.239.98",
+              "52.191.239.119",
+              "20.119.16.49"
+            ],
+            "possible_outbound_ip_addresses": "52.190.30.194,52.190.31.198,52.191.233.181,52.191.234.251,52.191.235.86,52.191.235.161,52.191.238.81,52.191.238.140,52.190.29.195,52.191.238.148,52.191.238.176,52.191.238.208,52.191.238.216,52.191.238.236,52.191.239.10,52.191.239.14,52.191.239.26,52.191.239.39,52.191.235.211,52.191.235.212,52.191.235.214,52.191.235.219,52.191.235.225,52.191.235.243,52.191.236.45,52.191.237.60,52.191.237.95,52.191.233.52,52.191.237.97,52.191.237.121,52.191.237.247,52.191.238.19,52.191.238.55,52.191.238.57,52.191.238.68,52.191.238.75,52.191.238.81,52.191.238.140,52.190.29.195,52.191.238.148,52.191.238.176,52.191.238.208,52.191.238.216,52.191.238.236,52.191.239.10,52.191.239.14,52.191.239.26,52.191.239.39,52.191.239.48,52.191.239.65,52.191.239.83,52.191.239.87,52.191.239.98,52.191.239.119,20.119.16.49",
+            "public_network_access_enabled": true,
+            "resource_group_name": "WebApp3133_group",
+            "service_plan_id": "/subscriptions/2146ae1f-7d1d-4dbf-828b-54f9ca42f169/resourceGroups/WebApp3133_group/providers/Microsoft.Web/serverfarms/ASP-WebApp3133group-b79e",
+            "site_config": [
+              {
+                "always_on": true,
+                "api_definition_url": "",
+                "api_management_api_id": "",
+                "app_command_line": "",
+                "application_stack": [
+                  {
+                    "current_stack": "",
+                    "docker_container_name": "",
+                    "docker_container_registry": "",
+                    "docker_container_tag": "",
+                    "docker_image_name": "mcr.microsoft.com/azure-app-service/windows/parkingpage:latest",
+                    "docker_registry_password": "",
+                    "docker_registry_url": "",
+                    "docker_registry_username": "",
+                    "dotnet_core_version": "",
+                    "dotnet_version": "",
+                    "java_container": "",
+                    "java_container_version": "",
+                    "java_embedded_server_enabled": false,
+                    "java_version": "",
+                    "node_version": "",
+                    "php_version": "Off",
+                    "python": false,
+                    "python_version": "",
+                    "tomcat_version": ""
+                  }
+                ],
+                "auto_heal_enabled": false,
+                "auto_heal_setting": [],
+                "container_registry_managed_identity_client_id": "",
+                "container_registry_use_managed_identity": false,
+                "cors": [],
+                "default_documents": [
+                  "Default.htm",
+                  "Default.html",
+                  "Default.asp",
+                  "index.htm",
+                  "index.html",
+                  "iisstart.htm",
+                  "default.aspx",
+                  "index.php",
+                  "hostingstart.html"
+                ],
+                "detailed_error_logging_enabled": false,
+                "ftps_state": "FtpsOnly",
+                "health_check_eviction_time_in_min": 10,
+                "health_check_path": "",
+                "http2_enabled": false,
+                "ip_restriction": [],
+                "linux_fx_version": "",
+                "load_balancing_mode": "LeastRequests",
+                "local_mysql_enabled": false,
+                "managed_pipeline_mode": "Integrated",
+                "minimum_tls_version": "1.2",
+                "remote_debugging_enabled": false,
+                "remote_debugging_version": "VS2019",
+                "scm_ip_restriction": [],
+                "scm_minimum_tls_version": "1.2",
+                "scm_type": "None",
+                "scm_use_main_ip_restriction": false,
+                "use_32_bit_worker": true,
+                "virtual_application": [],
+                "vnet_route_all_enabled": false,
+                "websockets_enabled": false,
+                "windows_fx_version": "DOCKER|mcr.microsoft.com/azure-app-service/windows/parkingpage:latest",
+                "worker_count": 1
+              }
+            ],
+            "site_credential": [
+              {
+                "name": "$WebApp3133",
+                "password": "pZp678r8KaRCMZkyqrPm7WNiAbf0qqwXK43CvSkd71aXiZJwMSwCqb9g6zgH"
+              }
+            ],
+            "sticky_settings": [],
+            "storage_account": [],
+            "tags": {},
+            "timeouts": null,
+            "virtual_network_subnet_id": "",
+            "zip_deploy_file": ""
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
